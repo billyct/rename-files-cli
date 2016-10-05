@@ -1,0 +1,41 @@
+{
+  "name": "rename-files-cli",
+  "version": "1.0.0",
+  "description": "rename files with pattern like String.replace(pattern, replace)",
+  "bin": {
+    "rename-files": "cli.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyct/rename-files-cli.git"
+  },
+  "keywords": [
+    "rename",
+    "rename-files",
+    "rename-files-cli"
+  ],
+  "author": "billyct",
+  "bugs": {
+    "url": "https://github.com/billyct/rename-files-cli/issues"
+  },
+  "homepage": "https://github.com/billyct/rename-files-cli#readme",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "rename-files-b": "^1.0.0",
+    "tempfile": "^1.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "execa": "^0.4.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
