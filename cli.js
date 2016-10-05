@@ -25,6 +25,11 @@ if (cli.input.length < 2) {
 	process.exit(1);
 }
 
+if (Object.keys(cli.flags).length === 0 && cli.flags.constructor === Object) {
+	// 默认参数
+	cli.flags = {path: './'};
+}
+
 const result = renameFiles.sync(cli.input[0], cli.input[1], cli.flags);
 
 if (result) {
